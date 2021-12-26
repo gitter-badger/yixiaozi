@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{27D1687F-ACC0-414A-90D8-12C1AD7C06E5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>yixiaozi</RootNamespace>
+    <AssemblyName>yixiaozi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dak.SPS2013.Library">
+      <HintPath>DLL\Dak.SPS2013.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="DayPilot">
+      <HintPath>DLL\DayPilot.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>DLL\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>DLL\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LZStringCSharp">
+      <HintPath>DLL\LZStringCSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client">
+      <HintPath>DLL\Microsoft.SharePoint.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime">
+      <HintPath>DLL\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio">
+      <HintPath>..\..\DocearReminder\DocearReminder\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\有条不紊\Work\敏捷艾科\奥林巴斯\SPO\Develp\repos\CheckYunXiaoPnumberAndCount\CheckYunXiaoPnumberAndCount\CheckYunXiaoPnumberAndCount\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>DLL\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>DLL\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>DLL\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>DLL\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Common">
+      <HintPath>DLL\Spire.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Doc">
+      <HintPath>DLL\Spire.Doc.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License">
+      <HintPath>DLL\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf">
+      <HintPath>DLL\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.XLS">
+      <HintPath>DLL\Spire.XLS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\IniFile.cs" />
+    <Compile Include="Media\Audio\Audio.cs" />
+    <Compile Include="Model\DocearReminder\ChromeBookmarks.cs" />
+    <Compile Include="Model\DocearReminder\Helper.cs" />
+    <Compile Include="Model\DocearReminder\UsedTimer.cs" />
+    <Compile Include="MyConvert\Copy.cs" />
+    <Compile Include="MyConvert\HtmlToString.cs" />
+    <Compile Include="MyConvert\ListChange.cs" />
+    <Compile Include="MyConvert\ObjectExtension.cs" />
+    <Compile Include="MyConvert\TextListConverter.cs" />
+    <Compile Include="DataHandler\ExcelHelper.cs" />
+    <Compile Include="Log\LogCommon.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Log\LogToText\LogToText.cs" />
+    <Compile Include="Model\DocearReminder\MyListBoxItemRemind.cs" />
+    <Compile Include="Model\DocearReminder\StationInfo.cs" />
+    <Compile Include="Net\Email\EmailUtil.cs" />
+    <Compile Include="Net\HttpHelp\Web.cs" />
+    <Compile Include="Security\Encrypt.cs" />
+    <Compile Include="StringHelper\Compress.cs" />
+    <Compile Include="Windows\FileSystem.cs" />
+    <Compile Include="Windows\GlobalHook.cs" />
+    <Compile Include="Windows\HotKeys.cs" />
+    <Compile Include="Windows\Process.cs" />
+    <Compile Include="Windows\RecentlyFileHelper.cs" />
+    <Compile Include="WinForm\Common\AutoSizeForm.cs" />
+    <Compile Include="WinForm\Control\ColorCodedCheckedListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinForm\Control\CustomCheckedListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinForm\Control\DayView\AbstractRenderer.cs" />
+    <Compile Include="WinForm\Control\DayView\Appointment.cs" />
+    <Compile Include="WinForm\Control\DayView\AppointmentEventArgs.cs" />
+    <Compile Include="WinForm\Control\DayView\DayView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinForm\Control\DayView\DrawTool.cs" />
+    <Compile Include="WinForm\Control\DayView\ITool.cs" />
+    <Compile Include="WinForm\Control\DayView\NewAppointmentEvent.cs" />
+    <Compile Include="WinForm\Control\DayView\Office11Renderer.cs" />
+    <Compile Include="WinForm\Control\DayView\Office12Renderer.cs" />
+    <Compile Include="WinForm\Control\DayView\ResolveAppointmentsEvent.cs" />
+    <Compile Include="WinForm\Control\DayView\Selection.cs" />
+    <Compile Include="WinForm\Control\DayView\SelectionTool.cs" />
+    <Compile Include="WinForm\Control\MyRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinForm\Control\SortByTimeListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinForm\Control\TagCloud\AddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\Control\TagCloud\AddItem.Designer.cs">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\Control\TagCloud\FileFormats.cs" />
+    <Compile Include="WinForm\Control\TagCloud\RenameItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\Control\TagCloud\RenameItem.Designer.cs">
+      <DependentUpon>RenameItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\Control\TagCloud\Statistics.cs" />
+    <Compile Include="WinForm\Control\TagCloud\TagCloudControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinForm\Control\TagCloud\TagCloudControl.Designer.cs">
+      <DependentUpon>TagCloudControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\Control\TagCloud\TXTHandling.cs" />
+    <Compile Include="WinForm\Control\TagCloud\XMLHandling.cs" />
+    <Compile Include="yixiaozi.cs" />
+    <Compile Include="Log\Logging.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screen\ScreenShot.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DLL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WinForm\Control\TagCloud\AddItem.resx">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\Control\TagCloud\RenameItem.resx">
+      <DependentUpon>RenameItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\Control\TagCloud\TagCloudControl.resx">
+      <DependentUpon>TagCloudControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
