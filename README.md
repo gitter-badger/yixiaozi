@@ -1,10 +1,11 @@
-### Hi there 👋
+![Uahh's Most used languages](https://github-readme-stats.vercel.app/api/top-langs?username=yixiaozi&show_icons=true&count_private=true&theme=gotham)
+
+![info](https://github-readme-stats.vercel.app/api?username=yixiaozi&show_icons=true&count_private=true&hide=prs&theme=gotham)
+
 
 <!--
-**yixiaozi/yixiaozi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
+**Uahh/Uahh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 Here are some ideas to get you started:
-
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
@@ -14,3 +15,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
