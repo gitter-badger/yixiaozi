@@ -105,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config\IniFile.cs" />
+    <Compile Include="IOHelper\Zip\Zip.cs" />
     <Compile Include="Media\Audio\Audio.cs" />
     <Compile Include="Model\DocearReminder\ChromeBookmarks.cs" />
     <Compile Include="Model\DocearReminder\Helper.cs" />
@@ -122,6 +123,7 @@
     <Compile Include="Model\DocearReminder\MyListBoxItemRemind.cs" />
     <Compile Include="Model\DocearReminder\StationInfo.cs" />
     <Compile Include="Net\Email\EmailUtil.cs" />
+    <Compile Include="Net\HttpHelp\HttpRequest.cs" />
     <Compile Include="Net\HttpHelp\Web.cs" />
     <Compile Include="Security\Encrypt.cs" />
     <Compile Include="StringHelper\Compress.cs" />

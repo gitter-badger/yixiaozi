@@ -123,6 +123,7 @@ namespace yixiaozi.Model.DocearReminder
         public string ID;
         public int ebstring;
         public bool isview = false;
+        public bool isEBType = false;
     }
     public class Fenlei
     {
