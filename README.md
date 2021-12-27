@@ -15,7 +15,3 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
