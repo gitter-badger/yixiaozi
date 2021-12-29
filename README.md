@@ -1,3 +1,6 @@
+
+[![Join the chat at https://gitter.im/yixiaozi/yixiaozi](https://badges.gitter.im/yixiaozi/yixiaozi.svg)](https://gitter.im/yixiaozi/yixiaozi?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ![Uahh's Most used languages](https://github-readme-stats.vercel.app/api/top-langs?username=yixiaozi&show_icons=true&count_private=true&theme=gotham)
 
 ![info](https://github-readme-stats.vercel.app/api?username=yixiaozi&show_icons=true&count_private=true&hide=prs&theme=gotham)
